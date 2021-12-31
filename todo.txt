@@ -1,15 +1,18 @@
 
-Watch class video
+Watch class video 12/23 at 2:30 
 Do activities
 Read README.md 
+Look at Student Resources
 Watch youtube video
 Create pseudocode
 Begin coding 
 15 git commits
 Create README
+Make sure live page works
+Submit to Bootcamp Spot
 
 
-Jerome Hints:
+Jerome's Hints:
 window.document
     alert
     clearInterval
@@ -19,5 +22,5 @@ window.document
     localStorage
     navigator
     onclick
-    
+
 
