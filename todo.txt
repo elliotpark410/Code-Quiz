@@ -1,0 +1,23 @@
+
+Watch class video
+Do activities
+Read README.md 
+Watch youtube video
+Create pseudocode
+Begin coding 
+15 git commits
+Create README
+
+
+Jerome Hints:
+window.document
+    alert
+    clearInterval
+    clearTimeout
+    fetch
+    firstFunction
+    localStorage
+    navigator
+    onclick
+    
+
