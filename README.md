@@ -1,6 +1,6 @@
 # Code-Quiz
 
-OLD README. UPDATE FOR THIS PROJECT
+OLD README. UPDATE FOR CODE QUIZ PROJECT
 
 The password generator as an applicaton that generates a random password based on user-selected criteria. As cybersecuriy threats grow, people would like to prevent valuable data from being stolen or damaged. One of the most effective ways to provide greater security is by creating a unique and unpredictable password. The application will run in the brwoser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes. 
 

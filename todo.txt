@@ -1,13 +1,20 @@
 
-Watch class video 12/23 at 2:30 
+Watch class video 12/23 at 3:13
+Watch class video 12/23 hw review 2:30 
 Do activities
 Read README.md 
 Look at Student Resources
 Watch youtube video
 Create pseudocode
 Begin coding 
-15 git commits
+    1. 15 Git commits 
+    2. Create variables and functions with arguments
+    3. Add helpful comments
+    4. Test
+    5. Fix bugs
+    6. Add local storage. keys and values are stored in string format. Objects and integer keys are automatically converted to strings, but I have to convert the value to a string
 Create README
+Review grading criteria
 Make sure live page works
 Submit to Bootcamp Spot
 
