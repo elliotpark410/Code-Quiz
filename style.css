@@ -26,7 +26,7 @@ body {
     margin: 10px 0;
 }
 
-.button, .start-bttn {
+.button, .start-bttn, .next-bttn {
     border: 3px solid rgb(26, 26, 168);
     border-width: 5px;
     background-color: rgb(243, 239, 243);
@@ -41,11 +41,11 @@ p {
     text-align: center;
 }
 
-.button:hover, .start-bttn:hover {
+.button:hover, .start-bttn:hover, .next-bttn:hover {
     border-color: rgb(97, 97, 248);
 }
 
-.start-bttn {
+.start-bttn, .next-bttn {
     width: 300px;
     margin: 20px 0;
     text-align: center;
