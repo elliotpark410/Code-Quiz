@@ -68,6 +68,6 @@ p {
     background-color: rgb(241, 167, 167);
 }
 
-.hide, .question-response {
+.hide {
     display: none;
 }
