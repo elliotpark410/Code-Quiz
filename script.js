@@ -188,14 +188,60 @@ function endOfQuiz() {
     questionElement.appendChild(submitElement);
 
     // Create event listener for submit element to store initials and score to local storage
-    submitElement.addEventListener("click", function() {
+    submitElement.addEventListener("click", function () {
+        // Create variable called initials to store initials entered in input
         var initials = inputElement.value;
 
         if (initials === "") {
             alert("Please enter your initials");
         } else {
-    
+            var playerScore = {
+                initials: initials,
+                score: score
+            };
+            console.log(playerScore);
+
+            localStorage.setItem("playerScore", JSON.stringify(playerScore));
+            window.location.replace("scoreboard.html");
         }
-    window.location.replace("scoreboard.html");
     });
 }
+
+
+
+
+
+
+
+// JAVASCRIPT FOR SCOREBOARD.HTML
+// Use querySelector to create variables
+var scoreboardElement = document.querySelector("#scoreboard");
+var backElement = document.querySelector("#back-button");
+var clearElement = document.querySelector("#clear-button");
+
+var ulElementHighscore = document.createElement("ul");
+scoreboardElement.appendChild(ulElementHighscore);
+
+var lastScore = JSON.parse(localStorage.getItem("playerScore"));
+
+if (lastScore !== null) {
+var liElement = document.createElement("li");
+liElement.textContent = lastScore.initials + " " + lastScore.score;
+ulElementHighscore.appendChild(liElement);
+}
+
+// Create event listener for backElement so back-button goes back to the start page (index.html)
+backElement.addEventListener("click", function() {
+    window.location.replace(".index.html");
+});
+
+
+
+// Create event listener for clearElement so clear-button clears and reloads local storage
+clear.addEventListener("click", function() {
+    localStorage.clear();
+    location.reload();
+});
+
+
+

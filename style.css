@@ -128,4 +128,14 @@ input {
 }
 
 
+@media screen and (max-width: 800px) {
+    body {
+        max-width: 800px;
+    }
+}
 
+@media screen and (max-width: 640px) {
+    body {
+           min-width: 640px;
+       }
+}
