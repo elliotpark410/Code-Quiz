@@ -3,6 +3,7 @@ var startQuiz = document.querySelector("#start-button");
 var timerElement = document.querySelector("#timer");
 var questionElement = document.querySelector("#questions");
 var container = document.querySelector(".container");
+var timeInterval = null;
 
 
 // Create a variable for unordered lists which will hold the multiple choices
@@ -48,7 +49,7 @@ var questions = [
 
 // When user clicks start button, the timer will begin
 startQuiz.addEventListener("click", function () {
-    var timerInterval = setInterval(function () {
+    timerInterval = setInterval(function () {
         secondsLeft--;
         timerElement.textContent = secondsLeft + " second(s) remaining";
 
@@ -62,7 +63,7 @@ startQuiz.addEventListener("click", function () {
 });
 
 
-// Create showQuestions function to display question and multiplce choices 
+// Create showQuestions function to display question and multiple choices 
 function showQuestion(questionIndex) {
     // Without clearing. The page will show all questions and multiple choices
     questionElement.innerHTML = "";
@@ -202,46 +203,13 @@ function endOfQuiz() {
             console.log(playerScore);
 
             localStorage.setItem("playerScore", JSON.stringify(playerScore));
-            window.location.replace("scoreboard.html");
+            window.location.replace("index-scoreboard.html");
         }
     });
 }
 
 
 
-
-
-
-
-// JAVASCRIPT FOR SCOREBOARD.HTML
-// Use querySelector to create variables
-var scoreboardElement = document.querySelector("#scoreboard");
-var backElement = document.querySelector("#back-button");
-var clearElement = document.querySelector("#clear-button");
-
-var ulElementHighscore = document.createElement("ul");
-scoreboardElement.appendChild(ulElementHighscore);
-
-var lastScore = JSON.parse(localStorage.getItem("playerScore"));
-
-if (lastScore !== null) {
-var liElement = document.createElement("li");
-liElement.textContent = lastScore.initials + " " + lastScore.score;
-ulElementHighscore.appendChild(liElement);
-}
-
-// Create event listener for backElement so back-button goes back to the start page (index.html)
-backElement.addEventListener("click", function() {
-    window.location.replace(".index.html");
-});
-
-
-
-// Create event listener for clearElement so clear-button clears and reloads local storage
-clear.addEventListener("click", function() {
-    localStorage.clear();
-    location.reload();
-});
 
 
 
