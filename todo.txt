@@ -1,11 +1,11 @@
 
-Watch class video 12/23 hw review 2:30 DONE
-Finish 04-Web API, Activities DONE
+Watch class video 12/23 hw review 2:30 
+Finish 04-Web API, Activities 
 Read README.md 
 Look at Student Resources
 Watch youtube video
 Create pseudocode
-Begin coding 
+Begin coding - CONTINUE AT JS LINE 197
     1. 15 Git commits 
     2. Create variables and functions with arguments
     3. Add helpful comments

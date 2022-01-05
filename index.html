@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Code Quiz</title>
-    <link href="style.css" rel="stylesheet">
-    <script defer src="script.js"></script>
 </head>
+
 <body>
+
+    <!-- Create a div for container -->
     <div class="container">
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-buttons" class="button-grid">
-                <button class="button">Answer 1</button>
-                <button class="button">Answer 2</button>
-                <button class="button">Answer 3</button>
-                <button class="button">Answer 4</button>
-            </div>
+
+        <!-- Link to highscores page -->
+        <a href="scoreboard.html">View Highscores</a>
+
+        <!-- Create a div for questions-->
+        <div id="questions">
+
+            <h1>Code Quiz</h1>
+
+            <p>Game Rules: You will be presented with code-related questions in a multiple choice format. When you hit "Start Quiz" a timer with 100 seconds will appear. Every incorrect answer will subtract 10 seconds from the timer. Enjoy!</p>
+
+            <!-- Create a button to Start Quiz -->
+            <button id="start-button">Start Quiz</button>
         </div>
 
-        <div class="hide">
-            <p class="question-response" data-state="correct">Correct</p>
-            <p class="question-response" data-state="wrong">Wrong</p>
-        </div> 
+        <!-- Create a div for timer -->
+        <div id="timer"></div>
 
-        <button id="start-button" class="start-bttn">Start</button>
+    </div>
 
 
-        <div class="time" style="text-align:center;"></div>
+    <script src="script.js"></script>
 
- 
 
 </body>
+
 </html>
