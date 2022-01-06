@@ -34,7 +34,7 @@ To install this code, use Github's guidlines to clone the repository
 <br>
 
 Here is a link to the Github repository
->https://elliotpark410.github.io/Code-Quiz/
+>https://github.com/elliotpark410/Code-Quiz
 
 <br>
 

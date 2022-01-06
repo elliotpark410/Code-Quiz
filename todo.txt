@@ -7,9 +7,8 @@ Watch youtube video DONE
 Create pseudocode DONE
 Begin coding DONE
 Create README DONE
-Review grading criteria
-Make sure live page works
-Submit to Bootcamp Spot
+Review grading criteria DONE
+Make sure live page works DONE
 
 
 Acceptance Criteria
@@ -24,6 +23,7 @@ Acceptance Criteria
     THEN the game is over DONE
     WHEN the game is over
     THEN I can save my initials and my score DONE
+
 
 Pseudocode
 -Create a variable that will store an array with an object (key-value) for questions, multiple choices, and answer
