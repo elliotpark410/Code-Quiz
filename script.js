@@ -201,11 +201,11 @@ function endOfQuiz() {
                 score: score
             };
 
-            // Store playerScore variable to local storage as string
-            localStorage.setItem("playerScore", JSON.stringify(playerScore));
+        // Store playerScore variable to local storage as string
+        localStorage.setItem("playerScore", JSON.stringify(playerScore));
 
-            // After clicking submit button, change window location to index-scoreboard html
-            window.location = "index-scoreboard.html";
+        // After clicking submit button, change window location to index-scoreboard html
+        window.location = "index-scoreboard.html";
         }
     });
 }

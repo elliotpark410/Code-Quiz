@@ -4,11 +4,9 @@ Finish 04-Web API, Activities DONE
 Read README.md DONE
 Look at Student Resources DONE
 Watch youtube video DONE
-Create pseudocode 
-Begin coding 
-    1. 15 Git commits 
-    2. Add helpful comments
-Create README
+Create pseudocode DONE
+Begin coding DONE
+Create README DONE
 Review grading criteria
 Make sure live page works
 Submit to Bootcamp Spot
@@ -27,3 +25,13 @@ Acceptance Criteria
     WHEN the game is over
     THEN I can save my initials and my score DONE
 
+Pseudocode
+-Create a variable that will store an array with an object (key-value) for questions, multiple choices, and answer
+-Create variables that will be elements for specific html class or id e.g. use document.query selector for start button, timer, question, multiple choice
+-Create variables for score, subtracting time, secondsleft, and questionindex
+-Create a startquiz function that will start the timer and start counting down. if timer reaches zero, then call endquiz function
+-create a function to display questions and multiple choices at a specific index 
+-Crete an event listener to capture the value of each multiple choice selected. Create a function to see if player multiple choice matches correct answer. If multiple choice selected is correct and respond with correct. If it is incorrect subtract time and respond with incorrect. 
+-Create endquiz function that will show player score and a form to enter initials
+-Save player score and initials to local storage 
+-display player score and initials in another html page by retrieving information from local storage
