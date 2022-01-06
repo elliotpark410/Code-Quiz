@@ -1,4 +1,4 @@
-// Use querySelector to create variables
+// Use querySelector and create variables for html tags
 var startQuiz = document.querySelector("#start-button");
 var timerElement = document.querySelector("#timer");
 var questionElement = document.querySelector("#questions");
@@ -6,13 +6,10 @@ var container = document.querySelector(".container");
 var timeInterval = null;
 
 
-// Create a variable for unordered lists which will hold the multiple choices
-var ulElement = document.createElement("ul");
-
-
 // Create variables for questionIndex, correctAnswers, secondsLeft, and subtractTime
 var questionIndex = 0;
 var correctAnswers = 0;
+var timeInterval = null;
 var secondsLeft = 100;
 var subtractTime = 10;
 
@@ -47,7 +44,7 @@ var questions = [
 ];
               
 
-// When user clicks start button, the timer will begin
+// When user clicks start button, the timer will begin to countdown
 startQuiz.addEventListener("click", function () {
     timerInterval = setInterval(function () {
         secondsLeft--;
@@ -65,13 +62,16 @@ startQuiz.addEventListener("click", function () {
 
 // Create showQuestions function to display question and multiple choices 
 function showQuestion(questionIndex) {
+    // Create a variable for unordered lists which will hold the multiple choices
+    var ulElement = document.createElement("ul");
+
     // Without clearing. The page will show all questions and multiple choices
-    questionElement.innerHTML = "";
-    ulElement.innerHTML = "";
+    questionElement.textContent = "";
+    ulElement.textContent = "";
 
     // Create a for loop to go through questions array
     for (var i = 0; i < questions.length; i++) {
-        // Create a variable to append only the question and choice in a specific index
+        // Create a variable to append only the questions and choices in a specific index
         var playerQuestion = questions[questionIndex].content;
         var playerChoices = questions[questionIndex].choices;
         questionElement.textContent = playerQuestion;
@@ -81,14 +81,15 @@ function showQuestion(questionIndex) {
     playerChoices.forEach(function (choiceContent) {
         //  Create a variable called multiple choice which will create a list item element (li)
         var multipleChoice = document.createElement("li");
+        // append multipleChoice element to ulElement (ulElement is later appeneded to questionElement)
+        ulElement.appendChild(multipleChoice);  
         // the li will now have the correct multiple choice text content
         multipleChoice.textContent = choiceContent;
 
-        // append to questionElement and ulElement 
+        // append ulElement to questionElement (html div)
         questionElement.appendChild(ulElement);
-        ulElement.appendChild(multipleChoice);
-
-        // create a "click" add event listener that will run a checkAnswer function
+    
+        // create a "click" add event listener for each multiple choice li which will run a checkAnswer function
         multipleChoice.addEventListener("click", (checkAnswer));
     });
 }
@@ -105,12 +106,12 @@ function checkAnswer(event) {
         var answerResponse = document.createElement("div");
         answerResponse.setAttribute("id", "answerResponse");
 
-        // if the player chooses the correct answer
+        // if the player chooses the correct answer, create textContent "correct"
         if (playerChoiceElement.textContent === questions[questionIndex].answer) {
             correctAnswers++;
             answerResponse.textContent = "Correct!";
           
-        // if the player chooses the incorrect answer
+        // if the player chooses the incorrect answer, subtract 10 seconds and create textContent "wrong" 
         } else {
             secondsLeft -= subtractTime;
             answerResponse.textContent = "Incorrect. The answer is:  " + questions[questionIndex].answer;
@@ -128,12 +129,12 @@ function checkAnswer(event) {
         showQuestion(questionIndex);
     }
 
-// append answerResponse to questionElement
+// append answerResponse to questionElement so it shows up on page
 questionElement.appendChild(answerResponse);
 }
 
 
-// Create a function that removes the questions + multipleChoices and timerElement
+// Create a function that removes the questions and multipleChoices and set seconds remaining to 0 and hide timer
 function endOfQuiz() {
     questionElement.innerHTML = "";
     secondsLeft = 0;
@@ -149,9 +150,8 @@ function endOfQuiz() {
 
     // Create a variable called score which is correctAnswers x 10 
     var score = correctAnswers * 10;
-    // Create a header with player correctAnswers
+    // Create a h2 header with player correctAnswers so that it displays after the h1 
     var header2Element = document.createElement("h2");
-    header2Element.setAttribute("id", "h2");
     header2Element.textContent = "Each correct answer is worth 10 points. Your score: " + score;
 
     // append header2Element to questionElement
@@ -159,7 +159,6 @@ function endOfQuiz() {
 
     // Create form element so player can input initials
     var formElement = document.createElement("form"); 
-    formElement.setAttribute("id", "form");
 
     // append formElement to questionElement
     questionElement.appendChild(formElement);
@@ -179,7 +178,7 @@ function endOfQuiz() {
     // append labelElement to questionElement
     questionElement.appendChild(inputElement);
 
-    // Create submit element so player can enter score to View Highscores page
+    // Create submit element so player can enter score to View Highscores html page. Add submit-button id for styling
     var submitElement = document.createElement("button");
     submitElement.setAttribute("id", "submit-button");
     submitElement.setAttribute("type", "submit");
@@ -196,18 +195,20 @@ function endOfQuiz() {
         if (initials === "") {
             alert("Please enter your initials");
         } else {
+            // Create variable called playerScore and include an objects with keys initials and score and properties for initials and score variable
             var playerScore = {
                 initials: initials,
                 score: score
             };
-            console.log(playerScore);
 
+            // Store playerScore variable to local storage as string
             localStorage.setItem("playerScore", JSON.stringify(playerScore));
-            window.location.replace("index-scoreboard.html");
+
+            // After clicking submit button, change window location to index-scoreboard html
+            window.location = "index-scoreboard.html";
         }
     });
 }
-
 
 
 

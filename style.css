@@ -7,7 +7,7 @@
 }
 
 :root { 
-    --blue: rgb(174, 175, 247);
+    --purple: rgb(174, 175, 247);
 }
 
 
@@ -26,7 +26,7 @@ body {
     width: 800px;
     height: 500px;
     background-color: white;
-    border: 5px solid var(--blue);
+    border: 5px solid var(--purple);
     border-radius: 8px;
     padding: 10px;
 }
@@ -34,7 +34,7 @@ body {
 a {
     position: relative;
     margin-left: 2%;
-    color: blue;
+    color: rgb(8, 8, 230);
 }
 
 h1 {
@@ -52,7 +52,7 @@ p {
 }
 
 #start-button {
-    background-color: var(--blue);
+    background-color: var(--purple);
     font-size: 20px;
     font-weight: bold;
     padding: 15px 32px;
@@ -63,7 +63,7 @@ p {
 }
 
 #back-button, #clear-button {
-    background-color: var(--blue);
+    background-color: var(--purple);
     width: 200px;
     position: relative;
     left: 20%;
@@ -76,7 +76,7 @@ p {
 
 
 #submit-button {
-    background-color: var(--blue);
+    background-color: var(--purple);
     width: 200px;
     padding: 10px;
     margin: 20px;
@@ -93,7 +93,7 @@ p {
 
 li {
     list-style-type: none;
-    background-color: var(--blue);
+    background-color: var(--purple);
     margin-top: 40px;
     padding: 5px 15px;
     width: 85%;
@@ -107,7 +107,7 @@ li:hover, #start-button:hover, #back-button:hover, #clear-button:hover, #submit-
 
 #answerResponse {
     margin-bottom: 20px;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid rgb(228, 223, 223);
     padding: 5px;
     text-align: center;
     font-style: italic;
@@ -125,17 +125,4 @@ input {
     margin: 50px 0px;
     width: 50%;
     border: 1px solid gray;
-}
-
-
-@media screen and (max-width: 800px) {
-    body {
-        max-width: 800px;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    body {
-           min-width: 640px;
-       }
 }

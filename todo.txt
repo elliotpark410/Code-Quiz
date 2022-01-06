@@ -1,45 +1,29 @@
 
-Watch class video 12/23 hw review 2:30 
-Finish 04-Web API, Activities 
-Read README.md 
-Look at Student Resources
-Watch youtube video
-Create pseudocode
-Begin coding - CONTINUE AT JS LINE 197
+Watch class video 12/23 hw review 2:30 DONE
+Finish 04-Web API, Activities DONE
+Read README.md DONE
+Look at Student Resources DONE
+Watch youtube video DONE
+Create pseudocode 
+Begin coding 
     1. 15 Git commits 
-    2. Create variables and functions with arguments
-    3. Add helpful comments
-    4. Test
-    5. Fix bugs
-    6. Add local storage. keys and values are stored in string format. Objects and integer keys are automatically converted to strings, but I have to convert the value to a string
+    2. Add helpful comments
 Create README
 Review grading criteria
 Make sure live page works
 Submit to Bootcamp Spot
 
 
-Jerome's Hints:
-window.document
-    alert
-    clearInterval
-    clearTimeout
-    fetch
-    firstFunction
-    localStorage
-    navigator
-    onclick
-
-
 Acceptance Criteria
     GIVEN I am taking a code quiz
-    WHEN I click the start button
-    THEN a timer starts and I am presented with a question
-    WHEN I answer a question
-    THEN I am presented with another question
+    WHEN I click the start button 
+    THEN a timer starts and I am presented with a question DONE
+    WHEN I answer a question 
+    THEN I am presented with another question DONE
     WHEN I answer a question incorrectly
-    THEN time is subtracted from the clock
+    THEN time is subtracted from the clock DONE
     WHEN all questions are answered or the timer reaches 0
-    THEN the game is over
+    THEN the game is over DONE
     WHEN the game is over
-    THEN I can save my initials and my score
+    THEN I can save my initials and my score DONE
 
