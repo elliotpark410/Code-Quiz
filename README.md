@@ -1,40 +1,8 @@
-# JavaScript Code-Quiz
+# JavaScript-Code-Quiz
 
-The JavaScript Code Quiz is an applicaton that will test basic JavaScript knowledge. A player will be presented with coding questions in a multiple choice format and the quiz will have a time limit of 100 seconds. Every incorrect answer will subtract 10 seconds from the timer. As a developer, it is important to learn new information or refresh your knowledge of a language to continuously grow as a developer. One of the best ways to measure your understanding is by taking a quiz and seeing the score. The score is important because it is meant to be a numeric representation of your understanding of a topic. If you receive a low score, you will know that there is room for improvement and growth. If you receive a high score, you know that you have a good knowledge base of the topic. 
+The JavaScript Code Quiz is an applicaton that will test basic JavaScript knowledge. A player will be presented with coding questions in a multiple choice format and the quiz will have a time limit of 100 seconds. Every incorrect answer will subtract 10 seconds from the timer.
 
-The application will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code. This application is interactive because it collects user-generated data and matches it to a corresponding key which returns a final score. 
-
-
-<br>
-
-## Getting Started
-
-Open your favorite web browser and enter the following web address to access. 
-
->https://elliotpark410.github.io/Code-Quiz/
-
-<br>
-
-## Prerequisites
-
-1. Any of these internet browser will do 
-<br>
-<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/main-desktop-browser-logos.png" title="Browser Icons image" width = 200 >
-
-
-2. To see code HTML, CSS, or JavaScript code, any of these Text editors will do
-<br>
-<img src="https://miro.medium.com/max/1400/0*MyAfggJM7yH40Sdx." title="Text Editor Icons image" width = 200px>
-
-<br>
-
-## Installing
-
-To install this code, use Github's guidlines to clone the repository
-<br>
-
-Here is a link to the Github repository
->https://github.com/elliotpark410/Code-Quiz
+[My First Project: Code Quiz](https://elliotpark410.github.io/Code-Quiz/)
 
 <br>
 
@@ -113,12 +81,6 @@ submitElement.addEventListener("click", function () {
 
  <br>
 
-## Deployed Link
-
-* [https://elliotpark410.github.io/Code-Quiz/](#)
-
-<br>
-
 ## Learning Points
 
 * How to use local storage, window.location, event listeners, appendChild, setAttributes, createElement, and more
@@ -131,24 +93,17 @@ submitElement.addEventListener("click", function () {
 
 <br>
 
-## Authors
+## Author
+ **Elliot Park** 
 
-* **Elliot Park** 
-
-- [Link to JavaScript Code Quiz application](https://elliotpark410.github.io/Code-Quiz/)
-- [Link to Github](https://github.com/elliotpark410)
-- [Link to LinkedIn](https://www.linkedin.com/in/elliot-park/)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+[Github](https://github.com/elliotpark410)
 
 <br>
 
-## License
-
-This project is licensed under the UC Berkeley Extension Program 
+[LinkedIn ](https://www.linkedin.com/in/elliot-park/)
 
 <br>
 
-## Acknowledgments
+[Email](mailto:elliotpark410@gmail.com)
 
-* Thank you to Jerome Chenette, Manuel Nunes, Daniel Chicchon, Brittany Crosthwait for their help!
+
